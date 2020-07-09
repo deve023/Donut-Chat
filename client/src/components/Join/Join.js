@@ -10,7 +10,7 @@ const Join = () => {
     return (
         <div className="joinOuterContainer">
             <div className="joinInnerContainer">
-                <h1 className="heading">Chat</h1>
+                <h1 className="heading"><span role="img" aria-label="donut">🍩</span> Donut-Chat <span role="img" aria-label="donut">🍩</span></h1>
                 <div><input placeholder="Nombre" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} /></div>
                 <div><input placeholder="Habitación" className="joinInput mt-20" type="text" onChange={(event) => setRoom(event.target.value)} /></div>
                 <Link onClick={event => (!name || !room) ? event.preventDefault(): null} to={`/chat?name=${name}&room=${room}`}>
