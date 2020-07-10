@@ -1,3 +1,16 @@
+.chat {
+  background-color: #1A1A1D;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  background-color: #1A1A1D;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .outerContainer {
     display: flex;
     justify-content: center;

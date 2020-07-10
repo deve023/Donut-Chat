@@ -59,13 +59,18 @@ const Chat = ({ location }) => {
     console.log(message, messages);
 
     return (
-        <div className="outerContainer">
-            <div className="container">
-                <InfoBar room={room}/>
-                <Messages messages={messages} name={name}/>
-                <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
+        <div className="chat">
+            <div className="title">
+                <h1 className="heading"><span role="img" aria-label="donut">🍩</span> Donut-Chat <span role="img" aria-label="donut">🍩</span></h1>
             </div>
-            <TextContainer users={users} />
+            <div className="outerContainer">
+                <div className="container">
+                    <InfoBar room={room}/>
+                    <Messages messages={messages} name={name}/>
+                    <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
+                </div>
+                <TextContainer users={users} />
+            </div>
         </div>
     )
 }
